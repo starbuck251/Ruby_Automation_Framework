@@ -5,11 +5,11 @@ module Superdrug_Mobile
   class HomePage < PageObject
     def initialize(browser, config)
       super
-      @expected_element = hero_image
+      @expected_element = hero_text
     end
 
-    def hero_image
-      @browser.div(class: 'hero-home')
+    def hero_text
+      browser.h1(text: 'sim-only deals')
     end
   end
 

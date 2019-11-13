@@ -24,3 +24,11 @@ You can see what environments configuration exists for in the features/support/c
 
 The additional parameters that will work following `bundle exec cucumber` are
 `env=prod`, `headless=true`, `-t @<tagname>`
+
+## Troubleshooting
+ 
+ Upon running the tests, should this message appear ` session not created: This version of ChromeDriver only supports Chrome version xx (Selenium::WebDriver::Error::SessionNotCreatedError)
+`
+Chromedriver either needs installing or updating. 
+Easy to do via homebrew: 
+` brew cask upgrade chromedriver`
